@@ -9,13 +9,14 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c 
+ * @brief finding statistics of an array and sorting an array
  *
- * <Add Extended Description Here>
+ * This file contains statistical calculations of an array and 
+ * sorting. 
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Yasin Soyaslan
+ * @date 11.08.2019
  *
  */
 
@@ -40,4 +41,10 @@ void main() {
 
 }
 
-/* Add other Implementation File Code Here */
+void print_statistics(){return;};
+unsigned char find_median(unsigned char arr[], unsigned char lenght){return 0;};
+unsigned char find_mean(unsigned char arr[], unsigned char lenght){return 0;};
+unsigned char find_minimum(unsigned char arr[], unsigned char lenght){return 0;};
+void print_array(unsigned char arr[], unsigned char lenght){return;};
+unsigned char find_maximum(unsigned char arr[], unsigned char lenght){return 0;};
+void sort_array(unsigned char arr[], unsigned char lenght){};
