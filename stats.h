@@ -39,7 +39,7 @@
  * @return no return 
  *
  */
-void print_statistic(void);
+void print_statistics(unsigned char arr[], unsigned char lenght);
 
 /**
  * @brief Prints the array 
@@ -95,7 +95,7 @@ unsigned char find_maximum(unsigned char arr[], unsigned char lenght);
  * @return unsigned char minimum value of array
  *
  */
-unsigned char find_median(unsigned char arr[], unsigned char lenght);
+unsigned char find_minimum(unsigned char arr[], unsigned char lenght);
 
 /**
  * @brief sorts the array values from maximum to minimum 
