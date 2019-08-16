@@ -9,9 +9,21 @@
 #
 #*****************************************************************************
 
-# Add your Source files to this variable
-SOURCES =
-
-# Add your include paths to this variable
-INCLUDES = 
+# Add your Source files and include paths to these variables
+ifeq ($(PLATFORM), MSP432)
+ SOURCES = interrupts_msp432p401r_gcc.c \
+	   startup_msp432p401r_gcc.c \
+	   system_msp432p401r.c \
+	   main.c \
+	   memory.c
+ INCLUDES = -I ../include/common/ \
+	    -I ../include/msp432/ \
+	    -I ../include/CMSIS/
+else
+ SOURCES = main.c memory.c 
+ INCLUDES = -I ../include/commoain.c memory.c 
+ INCLUDES = -I ../include/common/
+endif
+a = $(shell  echo $(SOURCES))
+$(info  $(a))
 
